@@ -13,6 +13,10 @@
   z-index: 0;
 }
 
+/* .spoon__img-rotate {
+  rotate: 180deg;
+} */
+
 .app__aboutus-content {
   width: 100%;
   z-index: 2;
