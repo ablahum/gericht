@@ -1,8 +1,10 @@
 import { useState } from 'react'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { MdOutlineRestaurantMenu } from 'react-icons/md'
+
 import images from '../../constants/images'
-import './Navbar.scss'
+import './navbar.scss'
+import NavbarSmall from './NavbarSmall'
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false)
@@ -43,46 +45,7 @@ const Navbar = () => {
         </a>
       </div>
 
-      <div className='navbar__smallscreen'>
-        <GiHamburgerMenu color='#fff' fontSize={27} onClick={() => setToggleMenu(true)} />
-        {toggleMenu && (
-          <div className='navbar__smallscreen__overlay flex__center slide-bottom'>
-            <MdOutlineRestaurantMenu fontSize={27} className='navbar__smallscreen__close' onClick={() => setToggleMenu(false)} />
-
-            <ul className='navbar__smallscreen__links'>
-              <li>
-                <a href='#home' onClick={() => setToggleMenu(false)}>
-                  Home
-                </a>
-              </li>
-
-              <li>
-                <a href='#about' onClick={() => setToggleMenu(false)}>
-                  About
-                </a>
-              </li>
-
-              <li>
-                <a href='#menu' onClick={() => setToggleMenu(false)}>
-                  Menu
-                </a>
-              </li>
-
-              <li>
-                <a href='#awards' onClick={() => setToggleMenu(false)}>
-                  Awards
-                </a>
-              </li>
-
-              <li>
-                <a href='#contact' onClick={() => setToggleMenu(false)}>
-                  Contact
-                </a>
-              </li>
-            </ul>
-          </div>
-        )}
-      </div>
+      <NavbarSmall />
     </nav>
   )
 }
