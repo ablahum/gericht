@@ -1,0 +1,65 @@
+.about {
+  position: relative;
+
+  &__overlay {
+    position: absolute;
+
+    img {
+      width: 400px;
+
+      @media screen and (max-width: 650px) {
+        width: 80%;
+        height: 320px;
+      }
+    }
+  }
+
+  &__content {
+    width: 100%;
+    z-index: 2;
+
+    &__about {
+      flex: 1;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      flex-direction: column;
+      text-align: right;
+
+      p {
+        margin: 2rem 0;
+        color: var(--color-grey);
+      }
+    }
+
+    &__knife {
+      margin: 2rem 4rem;
+
+      @media screen and (max-width: 900px) {
+        margin: 4rem 0;
+      }
+
+      img {
+        height: 900px;
+      }
+    }
+
+    &__history {
+      flex: 1;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+      text-align: left;
+
+      p {
+        margin: 2rem 0;
+        color: var(--color-grey);
+      }
+    }
+
+    @media screen and (max-width: 900px) {
+      flex-direction: column;
+    }
+  }
+}

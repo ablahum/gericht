@@ -1,4 +1,4 @@
-import { AboutUs, Chef, FindUs, Footer, Gallery, Header, Intro, Laurels, SpecialMenu } from './container'
+import { About, Chef, FindUs, Footer, Gallery, Header, Intro, Laurels, Menu } from './container'
 import { Navbar } from './components'
 import './App.css'
 
@@ -6,8 +6,8 @@ const App = () => (
   <div>
     <Navbar />
     <Header />
-    <AboutUs />
-    <SpecialMenu />
+    <About />
+    <Menu />
     <Chef />
     <Intro />
     <Laurels />

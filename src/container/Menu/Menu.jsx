@@ -1,8 +1,8 @@
 import { SubHeading, MenuItem } from '../../components'
 import { data, images } from '../../constants'
-import './SpecialMenu.css'
+import './menu.scss'
 
-const SpecialMenu = () => (
+const Menu = () => (
   <div className='app__specialMenu flex__center section__padding' id='menu'>
     <div className='app__specialMenu-title'>
       <SubHeading title='Menu that fits your palatte' />
@@ -43,4 +43,4 @@ const SpecialMenu = () => (
   </div>
 )
 
-export default SpecialMenu
+export default Menu
