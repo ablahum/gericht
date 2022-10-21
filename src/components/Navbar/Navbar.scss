@@ -31,10 +31,10 @@
 }
 
 .navbar__links {
-  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex: 1;
 
   list-style: none;
 
@@ -58,7 +58,6 @@
   align-items: center;
 
   a {
-    margin: 0 1rem;
     text-decoration: none;
 
     &:hover {
@@ -70,6 +69,7 @@
     width: 1px;
     height: 30px;
     background: var(--color-golden);
+    margin: 0 1rem;
   }
 
   @media screen and (max-width: 650px) {

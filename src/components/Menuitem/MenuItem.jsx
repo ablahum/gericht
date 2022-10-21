@@ -1,22 +1,22 @@
-import './MenuItem.css'
+import './menu-item.scss'
 
 const MenuItem = ({ title, price, tags }) => (
-  <div className='app__menuitem'>
-    <div className='app__menuitem-head'>
-      <div className='app__menuitem-name'>
+  <div className='menu-item'>
+    <div className='menu-item__head'>
+      <div className='menu-item__name'>
         <p className='p__cormorant' style={{ color: '#DCCA87' }}>
           {title}
         </p>
       </div>
 
-      <div className='app__menuitem-dash' />
+      <div className='dash' />
 
-      <div className='app__menuitem-price'>
+      <div className='menu-item__price'>
         <p className='p__cormorant'>{price}</p>
       </div>
     </div>
 
-    <div className='app__menuitem-sub'>
+    <div className='menu-item__sub'>
       <p className='p__opensans' style={{ color: '#AAAAAA' }}>
         {tags}
       </p>

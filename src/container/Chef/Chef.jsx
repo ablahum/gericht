@@ -1,4 +1,4 @@
-import './Chef.css'
+import './chef.scss'
 import { images } from '../../constants'
 import { SubHeading } from '../../components'
 
@@ -13,8 +13,8 @@ const Chef = () => (
 
       <h1 className='headtext__cormorant'>What We Believe In</h1>
 
-      <div className='app__chef-content'>
-        <div className='app__chef-content_quote'>
+      <div className='chef__content'>
+        <div className='chef__content__quote'>
           <img src={images.quote} alt='quote' />
 
           <p className='p__opensans'>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit Auctor Sit .</p>
@@ -23,7 +23,7 @@ const Chef = () => (
         <p className='p__opensans'>Auctor Sit Iaculis In Arcu. Vulputate Nulla Lobortis Mauris Eget Sit. Nulla Scelerisque Scelerisque Congue Ac Consequat, Aliquam Molestie Lectus Eu. Congue Iaculis Integer Curabitur Semper Sit Nunc.</p>
       </div>
 
-      <div className='app__chef-sign'>
+      <div className='chef__sign'>
         <p>Kevin Luo</p>
 
         <p className='p__opensans'>Chef & Founder</p>

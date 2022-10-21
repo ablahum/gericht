@@ -3,39 +3,40 @@ import { data, images } from '../../constants'
 import './menu.scss'
 
 const Menu = () => (
-  <div className='app__specialMenu flex__center section__padding' id='menu'>
-    <div className='app__specialMenu-title'>
+  <div className='menu flex__center section__padding' id='menu'>
+    <div className='menu__title'>
       <SubHeading title='Menu that fits your palatte' />
-      <h1 className='headtext__cormorant'>Today&apos;s Special</h1>
+
+      <h1 className='headtext__cormorant'>Today's Special</h1>
     </div>
 
-    <div className='app__specialMenu-menu'>
-      <div className='app__specialMenu-menu_wine  flex__center'>
-        <p className='app__specialMenu-menu_heading'>Wine & Beer</p>
+    <div className='menu__content'>
+      <div className='menu__content__wine  flex__center'>
+        <p className='menu__content__heading'>Wine & Beer</p>
 
-        <div className='app__specialMenu_menu_items'>
-          {data.wines.map((wine, index) => (
-            <MenuItem key={wine.title + index} title={wine.title} price={wine.price} tags={wine.tags} />
+        <div className='menu__content__items'>
+          {data.wines.map((wine, i) => (
+            <MenuItem key={i} title={wine.title} price={wine.price} tags={wine.tags} />
           ))}
         </div>
       </div>
 
-      <div className='app__specialMenu-menu_img'>
-        <img src={images.menu} alt='menu__img' />
+      <div className='menu__content__img'>
+        <img src={images.menu} alt='menu' />
       </div>
 
-      <div className='app__specialMenu-menu_cocktails  flex__center'>
-        <p className='app__specialMenu-menu_heading'>Cocktails</p>
+      <div className='menu__content__cocktails  flex__center'>
+        <p className='menu__content__heading'>Cocktails</p>
 
-        <div className='app__specialMenu_menu_items'>
-          {data.cocktails.map((cocktail, index) => (
-            <MenuItem key={cocktail.title + index} title={cocktail.title} price={cocktail.price} tags={cocktail.tags} />
+        <div className='menu__content__items'>
+          {data.cocktails.map((cocktail, i) => (
+            <MenuItem key={i} title={cocktail.title} price={cocktail.price} tags={cocktail.tags} />
           ))}
         </div>
       </div>
     </div>
 
-    <div style={{ marginTop: 15 }}>
+    <div>
       <button type='button' className='custom__button'>
         View More
       </button>
