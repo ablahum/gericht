@@ -1,0 +1,38 @@
+.chef__content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 2rem 0;
+
+  &__quote {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+
+    img {
+      width: 47px;
+      height: 40px;
+      margin: 0 1rem 1rem 0;
+    }
+  }
+}
+
+.chef__sign {
+  width: 100%;
+
+  p:first-child {
+    font-family: var(--font-base);
+    font-size: 2rem;
+    letter-spacing: 0.04em;
+    color: var(--color-golden);
+  }
+
+  img {
+    width: 250px;
+    margin-top: 2rem;
+
+    @media screen and (max-width: 450px) {
+      width: 80%;
+    }
+  }
+}
