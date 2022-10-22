@@ -7,7 +7,7 @@ const Menu = () => (
     <div className='menu__title'>
       <SubHeading title='Menu that fits your palatte' />
 
-      <h1 className='headtext__cormorant'>Today's Special</h1>
+      <h1 className='heading'>Today's Special</h1>
     </div>
 
     <div className='menu__content'>
@@ -37,7 +37,7 @@ const Menu = () => (
     </div>
 
     <div>
-      <button type='button' className='custom__button'>
+      <button type='button' className='btn'>
         View More
       </button>
     </div>
