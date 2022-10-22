@@ -5,12 +5,12 @@ import { meal } from '../../constants'
 import './video.scss'
 
 const Video = () => {
-  const [play, setPlay] = useState(false)
+  const [play, setPlay] = useState(true)
   const vidRef = useRef()
 
   return (
     <div className='video'>
-      <video ref={vidRef} src={meal} type='video/mp4' loop controls={false} muted />
+      <video ref={vidRef} src={meal} type='video/mp4' loop controls={false} muted autoPlay />
 
       <div className='video__overlay flex__center'>
         <div

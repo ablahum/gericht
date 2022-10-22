@@ -1,6 +1,6 @@
-import { About, Chef, FindUs, Footer, Gallery, Header, Video, Laurels, Menu } from './container'
+import { About, Chef, Contact, Footer, Gallery, Header, Video, Laurels, Menu } from './containers'
 import { Navbar } from './components'
-import './App.css'
+import './app.scss'
 
 const App = () => (
   <div>
@@ -12,7 +12,7 @@ const App = () => (
     <Video />
     <Laurels />
     <Gallery />
-    <FindUs />
+    <Contact />
     <Footer />
   </div>
 )
