@@ -1,5 +1,5 @@
 import images from '../../constants/images'
-import './navbar.scss'
+import './Navbar.scss'
 import NavbarSmall from './NavbarSmall'
 
 const Navbar = () => {
